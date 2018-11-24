@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="512.0" prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="application.UserInfo">
+   <children>
+      <TextField fx:id="newuser" layoutX="396.0" layoutY="149.0" prefHeight="15.0" prefWidth="200.0" promptText="User Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="account" layoutX="396.0" layoutY="204.0" prefHeight="15.0" prefWidth="200.0" promptText="ACCOUNT NO.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="442.0" layoutY="449.0" mnemonicParsing="false" onAction="#nconf" prefHeight="39.0" prefWidth="109.0" text="Submit" textFill="#171717">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="275.0" layoutY="151.0" prefHeight="30.0" prefWidth="109.0" text="User Name :" textFill="#1b1a1a" />
+      <Label alignment="CENTER" layoutX="275.0" layoutY="206.0" prefHeight="30.0" prefWidth="109.0" text="Account No.:" textFill="#111010" />
+      <Label layoutX="236.0" layoutY="72.0" prefHeight="65.0" prefWidth="580.0" text="Change Login password" textFill="#ee0909">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="npass" layoutX="396.0" layoutY="314.0" prefHeight="15.0" prefWidth="200.0" promptText="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cpass" layoutX="396.0" layoutY="370.0" prefHeight="15.0" prefWidth="200.0" promptText="Confirm Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="275.0" layoutY="315.0" prefHeight="30.0" prefWidth="109.0" text="New Password:" textFill="#111010" />
+      <Label alignment="CENTER" layoutX="275.0" layoutY="368.0" prefHeight="30.0" prefWidth="109.0" text="Confirm Password:" textFill="#111010" />
+      <TextField fx:id="oldpass" layoutX="396.0" layoutY="258.0" prefHeight="30.0" prefWidth="120.0" promptText="old password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="275.0" layoutY="258.0" prefHeight="30.0" prefWidth="109.0" text="Old Password:" textFill="#111010" />
+      <Button layoutX="54.0" layoutY="225.0" mnemonicParsing="false" onAction="#state" prefHeight="40.0" prefWidth="157.0" text="Account Summary" />
+      <Button layoutX="54.0" layoutY="272.0" mnemonicParsing="false" onAction="#pay" prefHeight="40.0" prefWidth="157.0" text="Transfer / Payment" />
+      <Button layoutX="54.0" layoutY="317.0" mnemonicParsing="false" onAction="#profile" prefHeight="40.0" prefWidth="157.0" text="Profile" />
+      <Button layoutX="54.0" layoutY="363.0" mnemonicParsing="false" onAction="#change" prefHeight="40.0" prefWidth="157.0" text="Change Login Password" />
+      <Button alignment="CENTER" layoutX="750.0" layoutY="45.0" mnemonicParsing="false" onAction="#button" prefHeight="60.0" prefWidth="70.0" text="LOGOUT" textFill="#e80a0a">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="status" layoutX="442.0" layoutY="95.0" prefHeight="30.0" prefWidth="260.0" textFill="#e80b0b" />
+   </children>
+</AnchorPane>

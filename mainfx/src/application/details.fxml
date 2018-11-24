@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="512.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserInfo">
+   <children>
+      <Label fx:id="n1" layoutX="439.0" layoutY="135.0" prefHeight="47.0" prefWidth="240.0" />
+            <Label fx:id="n2" layoutX="439.0" layoutY="195.0" prefHeight="47.0" prefWidth="242.0" />
+      <Label fx:id="n3" layoutX="439.0" layoutY="255.0" prefHeight="47.0" prefWidth="242.0" />
+      <Label fx:id="n4" layoutX="439.0" layoutY="315.0" prefHeight="47.0" prefWidth="242.0" />
+      <Button layoutX="398.0" layoutY="405.0" mnemonicParsing="false" onAction="#save" prefHeight="34.0" prefWidth="97.0" text="show details" />
+      <Label layoutX="294.0" layoutY="135.0" prefHeight="47.0" prefWidth="97.0" text="Name :" />
+      <Label layoutX="294.0" layoutY="195.0" prefHeight="47.0" prefWidth="97.0" text="Email :" />
+      <Label layoutX="294.0" layoutY="255.0" prefHeight="47.0" prefWidth="97.0" text="Account no :" />
+      <Label layoutX="294.0" layoutY="315.0" prefHeight="47.0" prefWidth="97.0" text="Balance :" />
+      <Button layoutX="14.0" layoutY="181.0" mnemonicParsing="false" onAction="#state" prefHeight="40.0" prefWidth="157.0" text="Account Summary" />
+      <Button layoutX="14.0" layoutY="228.0" mnemonicParsing="false" onAction="#pay" prefHeight="40.0" prefWidth="157.0" text="Transfer / Payment" />
+      <Button layoutX="14.0" layoutY="272.0" mnemonicParsing="false" onAction="#profile" prefHeight="40.0" prefWidth="157.0" text="Profile" />
+      <Button layoutX="14.0" layoutY="318.0" mnemonicParsing="false" onAction="#change" prefHeight="40.0" prefWidth="157.0" text="Change Login Password" />
+      <Button alignment="CENTER" layoutX="770.0" layoutY="65.0" mnemonicParsing="false" onAction="#button" prefHeight="60.0" prefWidth="70.0" text="LOGOUT" textFill="#e80a0a">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="266.0" layoutY="117.0" prefHeight="243.0" prefWidth="402.0" />
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.loginController">
+   <children>
+      <ImageView fitHeight="512.0" fitWidth="1024.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/sbi%20online%20money%20transfer.PNG" />
+         </image>
+      </ImageView>
+      <Button layoutX="702.0" layoutY="236.0" mnemonicParsing="false" onAction="#button" prefHeight="46.0" prefWidth="253.0" text="CONTINUE TO LOGIN">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="52.0" layoutX="25.0" layoutY="111.0" stroke="WHITE" strokeType="INSIDE" width="966.0" />
+      <ImageView fitHeight="64.0" fitWidth="460.0" layoutX="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/sbi-logo-1.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="21.0" layoutY="70.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="215.0" text="Products &amp; Services">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="238.0" layoutY="70.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="117.0" text="How Do I">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

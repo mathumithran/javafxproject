@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootpane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.loginController">
+   <children>
+      <ImageView fitHeight="512.0" fitWidth="1024.0" layoutX="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/registration_login.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="295.0" layoutX="4.0" layoutY="209.0" stroke="#1e1e1e" strokeType="INSIDE" width="557.0" />
+      <Button layoutX="66.0" layoutY="376.0" mnemonicParsing="false" onAction="#login" prefHeight="37.0" prefWidth="73.0" text="Login" textFill="#0d0d0d">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <TextField fx:id="name" layoutX="46.0" layoutY="269.0" prefHeight="29.0" prefWidth="232.0" promptText="UserName">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <PasswordField fx:id="pass" layoutX="46.0" layoutY="329.0" prefHeight="29.0" prefWidth="232.0" promptText="Password">
+         <font>
+            <Font size="13.0" />
+         </font></PasswordField>
+      <Button layoutX="313.0" layoutY="269.0" mnemonicParsing="false" onAction="#newuser" prefHeight="29.0" prefWidth="164.0" text="New User? Register here" textFill="#0d0d0d">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="313.0" layoutY="313.0" mnemonicParsing="false" onAction="#forgetpass" prefHeight="29.0" prefWidth="164.0" text="Forgot Login Password" textFill="#0d0d0d">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="149.0" layoutY="376.0" mnemonicParsing="false" onAction="#reset" prefHeight="37.0" prefWidth="73.0" text="Reset" textFill="#0d0d0d">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="52.0" layoutX="7.0" layoutY="112.0" stroke="WHITE" strokeType="INSIDE" width="974.0" />
+      <Label fx:id="status" layoutX="46.0" layoutY="88.0" prefHeight="100.0" prefWidth="800.0" text="AUTHENTICATION " textFill="#fc1f1f">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <Label layoutX="46.0" layoutY="240.0" prefHeight="29.0" prefWidth="101.0" text="Username*">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="298.0" prefHeight="29.0" prefWidth="101.0" text="Password*">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="211.0" prefHeight="29.0" prefWidth="312.0" text="(CARE: Username and password are case sensitive.)">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="64.0" layoutX="248.0" layoutY="3.0" stroke="WHITE" strokeType="INSIDE" width="743.0" />
+      <ImageView fitHeight="64.0" fitWidth="460.0" layoutX="36.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/sbi-logo-1.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="83.0" layoutY="67.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="144.0" text="Products &amp; Services">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="229.0" layoutY="67.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="117.0" text="How Do I">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="9.0" layoutY="67.0" mnemonicParsing="false" onAction="#home" prefHeight="37.0" prefWidth="73.0" text="Home">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="back" layoutY="504.0" prefHeight="94.0" prefWidth="1068.0" text="NOTE:&#10;1. A password must have at least eight characters.              &#10;2. A password consists of only letters and digits.             &#10;3. A password must contain at least two digits .               ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>
